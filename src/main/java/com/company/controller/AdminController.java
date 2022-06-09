@@ -593,7 +593,6 @@ public class AdminController {
 
             }
 
-
             SendMessage sendMessage = new SendMessage(chatId, "Yoqmoqchi bo'lgan mahsulotning ID sini kiriting: ");
             ComponentContainer.productStepMap.put(chatId, AdminStatus.SWITCH_ON_PRODUCT);
 
