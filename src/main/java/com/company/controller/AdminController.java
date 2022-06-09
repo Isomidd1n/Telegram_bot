@@ -693,7 +693,6 @@ public class AdminController {
 
     }
 
-
     public void notificationToAdmin(String message) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(ComponentContainer.ADMIN_ID);
