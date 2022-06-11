@@ -11,10 +11,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public abstract class ComponentContainer {
-    public static final String BOT_TOKEN = "5216539076:AAHKmiFlKM4g_BjpCdgvcHwvxi1qlW9Q1kI";
-    public static final String BOT_NAME = "TorrentGameLinkBot";
+    public static final String BOT_TOKEN = "bot token writer...";
+    public static final String BOT_NAME = "bot link writer....";
 
-    public static final String ADMIN_ID = "862541270";  //862541270
+    public static final String ADMIN_ID = "your id writer....";
 
     public static Car MY_TELEGRAM_BOT;
 
