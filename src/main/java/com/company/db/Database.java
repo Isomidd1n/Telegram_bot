@@ -23,8 +23,8 @@ public interface Database {
             // Class.forName("org.postgresql.Driver");  // 1
 
             con = DriverManager
-                    .getConnection("jdbc:postgresql://localhost:5432/.....",
-                            ".....user", ".....password");
+                    .getConnection("jdbc:postgresql://localhost:5432/car_bot",
+                            "postgres", "2001");
 
         } catch (SQLException e) {
             e.printStackTrace();
