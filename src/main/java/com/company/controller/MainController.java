@@ -257,6 +257,19 @@ public class MainController {
             sendMessage.setText("Quyidagilardan birini tanlang:👇 ");
             sendMessage.setReplyMarkup(InlineKeyboardUtil.Menu());
             ComponentContainer.MY_TELEGRAM_BOT.sendMsg(sendMessage);
+        }else if (text.equals("/help")) {
+            sendMessage.setText("Yordam kerak bo'lsa [Admin](https://t.me/isomiddin_999)ga murojaat qiling.");
+            sendMessage.setParseMode(ParseMode.MARKDOWN);
+            ComponentContainer.MY_TELEGRAM_BOT.sendMsg(sendMessage);
+        } else if (text.equals("/about")) {
+            sendMessage.setText("Assalomu aleykum *" + user.getUserName() + "* botimiz asosan chet el mashinalarini sotish bilan shug'ullanadi.\n" +
+                    "Bizni *ijtimoiy tarmoqlarda kuzatib boring👇*\n" +
+                    "Instagram: [bosing](https://www.instagram.com/isomiddin_39/)\n" +
+                    "Telegram: [bosing](https://t.me/Farmingsimulatormod)\n" +
+                    "YouTube: [bosing](https://www.youtube.com/channel/UCNL-dFBJ-B1HaWs3fE2Rfjw)\n" +
+                    "Facebook: [bosing](https://www.facebook.com/profile.php?id=100069065493562)");
+            sendMessage.setParseMode(ParseMode.MARKDOWN);
+            ComponentContainer.MY_TELEGRAM_BOT.sendMsg(sendMessage);
         }
 
 
@@ -341,7 +354,7 @@ public class MainController {
                     total += (cartProduct.getQuantity() * product.getPrice());
 
                 }
-                messageText += "\uD83D\uDCB8 Jami mahsulotlar: ";
+                messageText += "\uD83D\uDCB8 Jami mahsulotlar $: ";
                 messageText += total;
 
                 sendMessage.setText(messageText);

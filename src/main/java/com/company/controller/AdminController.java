@@ -47,7 +47,7 @@ public class AdminController {
 
                 SendPhoto sendPhoto = new SendPhoto(chatId, new InputFile(product.getImage()));
                 sendPhoto.setCaption(String.format("Kategoriya: %s\n  ID : %s \n" +
-                                "Mahsulot: %s \n Narxi $: %s $\n Soni: %s ta \n Tafsiloti:  %s \n\n Quyidagi mahsulot bazaga qo'shilsinmi?",
+                                "Mahsulot: %s \n Narxi $: %s \n Soni: %s ta \n Tafsiloti:  %s \n\n Quyidagi mahsulot bazaga qo'shilsinmi?",
                         CategoryService.getCategoryById(product.getCategoryId()).getName(), product.getId(),
                         product.getName(), product.getPrice(), product.getQuantity(), product.getDescription()));
                 sendPhoto.setReplyMarkup(InlineKeyboardUtil.confirmAddProductMarkup());
@@ -247,7 +247,6 @@ public class AdminController {
         if (text.equals("/help")) {
             sendMessage.setText("Yordam kerak bo'lsa [Admin](https://t.me/isomiddin_999)ga murojaat qiling.");
             sendMessage.setParseMode(ParseMode.MARKDOWN);
-            ComponentContainer.MY_TELEGRAM_BOT.sendMsg(sendMessage);
         } else if (text.equals("/about")) {
             sendMessage.setText("Assalomu aleykum *" + user.getUserName() + "* botimiz asosan chet el mashinalarini sotish bilan shug'ullanadi.\n" +
                     "Bizni *ijtimoiy tarmoqlarda kuzatib boring👇*\n" +
@@ -256,7 +255,6 @@ public class AdminController {
                     "YouTube: [bosing](https://www.youtube.com/channel/UCNL-dFBJ-B1HaWs3fE2Rfjw)\n" +
                     "Facebook: [bosing](https://www.facebook.com/profile.php?id=100069065493562)");
             sendMessage.setParseMode(ParseMode.MARKDOWN);
-            ComponentContainer.MY_TELEGRAM_BOT.sendMsg(sendMessage);
         }
 
         ComponentContainer.MY_TELEGRAM_BOT.sendMsg(sendMessage);

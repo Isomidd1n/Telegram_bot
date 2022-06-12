@@ -82,7 +82,7 @@ public class InlineKeyboardUtil {
         InlineKeyboardButton menuButton = getButton("📠 PRODUCT MENU", String.valueOf(Data.PRODUCT_MENU));
         InlineKeyboardButton magazineButton = getButton("🏪 LOCATION", String.valueOf(Data.MAGAZINE));
         InlineKeyboardButton contactButton = getButton("📞OUR CONTACTS", String.valueOf(Data.OUR_CONTACTS));
-        InlineKeyboardButton cartButton = getButton("🛒 Cart ", "cart");
+        InlineKeyboardButton cartButton = getButton("🛒 Savatcha ", "cart");
 
 //        magazineButton.setUrl("https://www.google.com/maps/place/Nout.uz+-+%D0%9C%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD+%D0%9D%D0%BE%D1%83%D1%82%D0%B1%D1%83%D0%BA%D0%BE%D0%B2+N1/@41.3386395,69.2723408,15z/data=!4m5!3m4!1s0x0:0x7e8c159c995773ea!8m2!3d41.3386395!4d69.2723408");
 
